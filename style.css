@@ -29,7 +29,7 @@
     text-decoration: none;
 
     position: relative;
-    left: 30px;
+    left: 150px;
 }
 
 .nav-menu {
@@ -42,7 +42,7 @@
 
 
     position: relative;
-    right: 10%;
+    left : 200px;
 }
 
 .nav-item {
@@ -344,7 +344,7 @@
     ;
 
     position: relative;
-    top: 723px;
+    top: 791px;
 }
 
 .client1 {
@@ -529,7 +529,7 @@
 
 
     position: relative;
-    top: 850px;
+    top: 790px;
 }
 
 .img1 {
@@ -563,7 +563,7 @@
     background-color: rgb(161,222,207);
 
     position: relative;
-    top: 850px;
+    top: 790px;
 
     display: flex;
     flex-direction: column;
