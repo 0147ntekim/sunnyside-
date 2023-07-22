@@ -42,7 +42,7 @@
 
 
     position: relative;
-    left : 200px;
+    right: 150px;
 }
 
 .nav-item {
@@ -101,29 +101,11 @@
     color: #242b34 ;
 }
 
-.hamburger{
+.hamburger {
     display: none;
 }
 
-.hamburger > .bar > div {
-    width: 25px;
-    margin-bottom: 3px;
-    height: 4px;
-    background-color: white;
-
-    position: relative;
-    right: 20px;
-    top: 25px;
-}
-
-.close{
-    font-family: sans-serif;
-    font-size: 1.5rem;
-    color: white;
-
-    position: relative;
-    right: 20px;
-    top: 15px;
+.close-nav {
     display: none;
 }
 
@@ -620,14 +602,21 @@
 
 
 
-@media only screen and (max-device-width: 375px) {
+@media (max-width: 375px), (max-width: 768px) {
     .nav-brand {
         position: relative;
         left: 10px;
     }
 
     .hamburger {
-        display: block !important;
+        display: block;
+        cursor: pointer;
+        
+        position: absolute;
+        left: 85%;
+        top: 3.5%;
+        z-index: 2000;
+        /* visibility: visible; */
     }
 
     .nav-menu {
@@ -685,32 +674,25 @@
         text-decoration: none;
     }
 
-    .reveal {
+    .close-nav {
+        display: none;
+        position: absolute;
+        left: 85%;
+        top: 3.5%;
+        z-index: 2000;
+        /* color: red; */
+    }
+    
+    .open-mobile-nav {
         left: 0;
     }
 
-    .close {
-        display: none;
-    }
-
-    .display {
-        display: block;
-    }
-
-    .hide {
-        display: none;
-    }
-
     
-
     
-
-    
-
     .hero-section {
         width: auto;
         height: 80vh;
-        background-image: url(images/desktop/image-header.jpg);
+        background-image: url(images/mobile/image-header.jpg);
         background-size: cover;
         background-position: center;
     }
@@ -752,7 +734,7 @@
     }
 
     .boxb {
-        background-image: url(images/desktop/image-transform.jpg);
+        background-image: url(images/mobile/image-transform.jpg);
         background-size: cover;
         background-position: center;
     
@@ -784,7 +766,7 @@
         text-align: center;
         line-height: 1.6;
         color: rgba(166,165,173,255);
-
+        width: 375px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -811,7 +793,7 @@
     }
 
     .boxc {
-        background-image: url(images/desktop/image-stand-out.jpg);
+        background-image: url(images/mobile/image-stand-out.jpg);
         background-size: cover;
         background-position: center;
 
@@ -843,7 +825,7 @@
         line-height: 1.5;
         color: rgba(166,165,173,255);
         text-align: center;
-
+        width: 375px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1080,7 +1062,7 @@
     }
     
     .img1 {
-        background-image: url(images/desktop/image-gallery-milkbottles.jpg);
+        background-image: url(images/mobile/image-gallery-milkbottles.jpg);
         background-size: cover;
         background-position: center;
 
@@ -1088,7 +1070,7 @@
     }
     
     .img2 {
-        background-image: url(images/desktop/image-gallery-orange.jpg);
+        background-image: url(images/mobile/image-gallery-orange.jpg);
         background-size: cover;
         background-position: center;
 
@@ -1096,7 +1078,7 @@
     }
     
     .img3 {
-        background-image: url(images/desktop/image-gallery-cone.jpg);
+        background-image: url(images/mobile/image-gallery-cone.jpg);
         background-size: cover;
         background-position: center;
 
@@ -1104,7 +1086,7 @@
     }
     
     .img4 {
-        background-image: url(images/desktop/image-gallery-sugarcubes.jpg);
+        background-image: url(images/mobile/image-gallery-sugar-cubes.jpg);
         background-size: cover;
         background-position: center;
 
@@ -1167,9 +1149,21 @@
     .social-links a{
         margin-left: 1.9rem;
     }
-    
+
     .social-links a:hover {
         color:  white;
+    }
+
+    .open-nav{
+        display: block;
+    }
+
+    .close-hamburger {
+        display: none;
+    }
+
+    .reveal-hamburger {
+        display: block;
     }
 
 

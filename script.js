@@ -1,19 +1,19 @@
-const bar = document.querySelector(".bar");
-const navMenu = document.querySelector(".nav-menu");
-const close = document.querySelector('.close')
+const closeNav = document.querySelector('.close-nav')
+const hamburger = document.querySelector('.hamburger')
+const navMenu=document.querySelector('.nav-menu')
 
-bar.addEventListener("click", revealMobileNav);
 
-function revealMobileNav(){
-    navMenu.classList.add('reveal');
-    close.classList.add('display')
-    bar.classList.add('hide')
+hamburger.addEventListener('click', openNav)
+closeNav.addEventListener('click', closeNavBar)
+
+function openNav(){
+    closeNav.classList.add('open-nav')
+    hamburger.classList.add('close-hamburger')
+    navMenu.classList.add('open-mobile-nav')
 }
 
-close.addEventListener('click', hideMobileNav)
-
-function hideMobileNav(){
-    navMenu.classList.remove('reveal')
-    close.classList.remove('display')
-    bar.classList.remove('hide')
+function closeNavBar(){
+    hamburger.classList.remove('close-hamburger')
+    closeNav.classList.remove('open-nav')
+    navMenu.classList.remove('open-mobile-nav')
 }
