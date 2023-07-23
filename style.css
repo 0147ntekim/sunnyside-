@@ -142,7 +142,7 @@
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 70vh 70vh 100vh;
+    grid-template-rows: 70vh 70vh 70vh;
     grid-template-areas: 
     "boxa boxb"
     "boxc boxd"
@@ -326,7 +326,7 @@
     ;
 
     position: relative;
-    top: 791px;
+    top: 1500px;
 }
 
 .client1 {
