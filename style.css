@@ -849,9 +849,66 @@
         border-bottom: 8px solid rgba(248,115,103,255) !important;
         border-radius: 3px !important;
     }
+
+    .boxe {
+        background-image: url(images/desktop/image-graphic-design.jpg);
+        background-size: cover;
+        background-position: center;
     
-
-
+        grid-area: "boxe";
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        padding-bottom: 40px;
+    }
+    
+    .boxe-title {
+        font-size: 2rem;
+        font-family: "Barlow", sans-serif;
+        text-transform: capitalize;
+        color: rgba(35,83,75,255);
+    
+        position: relative;
+        bottom: 25px;
+    }
+    
+    .boxe-p {
+        font-size: 16px;
+        font-family: "Barlow", sans-serif;
+        text-align: center;
+        color: rgba(74,130,117,255);
+    }
+    .boxf {
+        background-image: url(images/desktop/image-photography.jpg);
+        background-size: cover;
+        background-position: center;
+    
+        grid-area: "boxf";
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        padding-bottom: 40px;
+    }
+    
+    .boxf-title {
+        font-size: 2rem;
+        font-family: "Barlow", sans-serif;
+        text-transform: capitalize;
+        color: rgba(22,86,116,255);
+    
+        position: relative;
+        bottom: 25px;
+    }
+    
+    .boxf-p {
+        font-size: 16px;
+        font-family: "Barlow", sans-serif;
+        text-align: center;
+        color: rgba(29,106,145,255);
+    }
+    
     .testimonials {
         width: auto;
         height: 100vh;
