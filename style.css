@@ -142,7 +142,7 @@
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 70vh 70vh 70vh;
+    grid-template-rows: 70vh 70vh 100vh;
     grid-template-areas: 
     "boxa boxb"
     "boxc boxd"
@@ -908,7 +908,7 @@
         text-align: center;
         color: rgba(29,106,145,255);
     }
-
+    
     .testimonials {
         width: auto;
         height: 100vh;
@@ -923,7 +923,7 @@
         ;
 
         position: relative;
-        top: 450px;
+        top: 250px;
     }
 
     .client1 {
