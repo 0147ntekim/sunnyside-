@@ -1399,7 +1399,7 @@ header {
 
 .footer {
     width: 100%;
-    min-height: 50vh !important;
+    min-height: 60vh !important;
 
     padding: 50px 100px 50px 100px;
 
@@ -1458,8 +1458,9 @@ header {
 }
 
 .footer .footer-title {
-    font-size: 30px !important;
+    font-size: 25px !important;
     font-family: sans-serif;
+    color: #1a6553;
 
     @media (min-width:820px){
         font-size: 40px !important;
@@ -1471,7 +1472,7 @@ header {
 }
 
 .footer .footer-list {
-    width: 30%;
+    width: 60% !important;
     display: flex !important;
     flex-direction: row;
     justify-content: space-between;
@@ -1486,7 +1487,7 @@ header {
 
 @media (max-width:991px){
     .footer .footer-list{
-        width: 50% !important;
+        width: 60% !important;
 
         @media (min-width:820px){
             width: 50% !important;
@@ -1510,28 +1511,33 @@ header {
     }
 }
 
+
 .footer .footer-list a {
-    font-size: 20px;
+    font-size: 30px !important;
     text-transform: capitalize;
     text-decoration: none;
     color: #0f4e3f;
 
-    
+}
 
-    @media (max-width:575px){
+@media (max-width:991px){
+    .footer .footer-list a {
+        @media (min-width:820px){
+            font-size: 45px !important; 
+        }
+    
+    
+        @media (min-width:768px){
+            font-size: 45px !important;
+        }
+    }
+}
+
+
+@media (max-width:575px){
+    .footer .footer-list a{
         font-size: 25px !important;
     }
-
-
-    @media (min-width:820px){
-        font-size: 45px !important; 
-    }
-
-
-    @media (min-width:768px){
-        font-size: 45px !important;
-    }
-
 }
 
 @media (max-width:320px){
@@ -1541,7 +1547,7 @@ header {
 }
 
 .footer .social-links{
-    width: 15%;
+    width: 20%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
